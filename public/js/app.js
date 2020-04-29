@@ -1,6 +1,3 @@
-
-
-
 const frm=document.querySelector('form')
 const loc=frm.querySelector('input')
 const msg1=document.querySelector('#message-1')
