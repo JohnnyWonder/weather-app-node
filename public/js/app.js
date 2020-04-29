@@ -8,7 +8,8 @@ frm.addEventListener('submit',(e)=>{
     msg1.textContent='Loading Weather...'
     msg2.textContent=''
 
-    const url='http://127.0.0.1:3000/weather?address='+loc.value
+
+    const url='/weather?address='+loc.value
     if(loc.value===''){
         msg1.textContent=''
         return msg2.textContent='You must enter a location!'
