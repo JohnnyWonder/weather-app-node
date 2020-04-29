@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>The Weather Application</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/weather.png">
+</head>
+
+<body>
+    <div class="main-content">
+    {{>header}}
+    <p>Use this page to get your weather</p>
+        <form  id="frmMain" method="GET" action="/weather">
+            <input type="text" id="address" name="address" placeholder="Type location here">
+            <button name="cmdGet" id="cmdGet">Get Weather</button>
+        </form>
+        <p id="message-1">
+
+        </p>
+        <p id="message-2">
+
+        </p>
+    </div>
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
