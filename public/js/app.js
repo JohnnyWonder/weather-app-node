@@ -2,6 +2,7 @@ const frm=document.querySelector('form')
 const loc=frm.querySelector('input')
 const msg1=document.querySelector('#message-1')
 const msg2=document.querySelector('#message-2')
+const imgTag=document.querySelector('#weatherIcon')
 
 frm.addEventListener('submit',(e)=>{
     e.preventDefault()
@@ -24,7 +25,7 @@ frm.addEventListener('submit',(e)=>{
         }
         msg1.textContent=data.Location
         msg2.textContent=data.forecast
-        
+        imgTag.setAttribute('src',data.icon)
     })
 })
 
