@@ -2,7 +2,6 @@ const request=require('request')
 
 const getWeather=(lat,long,callback)=>{
     const url='http://api.weatherstack.com/current?access_key=f1aca8459d5f0423089d9de1437f2e84&query='+lat +','+long+'&units=f'
-    console.log(url)
     request({url, json: true},(error,response,body)=>{
         const data = {
             currentWeather: '',
